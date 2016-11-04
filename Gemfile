@@ -8,7 +8,6 @@ gem 'coffee-rails', '4.2.1'
 gem 'jquery-rails', '4.1.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.4.1'
-gem 'unicorn'
 
 group :development, :test do
   gem 'mysql2'
@@ -16,6 +15,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'unicorn'
   gem 'web-console',           '3.1.1'
   gem 'listen',                '3.0.8'
   gem 'spring',                '1.7.2'
@@ -23,7 +23,7 @@ group :development do
 end
 
 group :production do
-  gem 'mysql2'
+  gem 'pg', '0.18.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
